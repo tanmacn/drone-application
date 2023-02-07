@@ -86,4 +86,31 @@
                                  initiallyDeferred="false" referencedColumnNames="id"
                                  referencedTableName="drone"/>
     </changeSet>
+    <changeSet author="user" id="f6846e54-d268-4e50-95dc-fb87438e8f0a">
+        <sql>
+            INSERT INTO drone
+            (id, created, deleted, updated, serial_number, model, weight, battery_capacity, state)
+            VALUES ('b9156122-c619-44b0-8774-ca3912d467af', '2022-08-17 17:26:19.759267', null,
+                    '2022-08-17 17:26:19.759267', '1234abc4d', 'Lightweight', 100, 90, 'IDLE'),
+                   ('b9156122-c619-44b0-8774-ca3912d467aa', '2022-08-17 17:26:19.759267', null,
+                    '2022-08-17 17:26:19.759267', '1234abc4e', 'Middleweight', 200, 90, 'LOADING'),
+                   ('b9156122-c619-44b0-8774-ca3912d467ab', '2022-08-17 17:26:19.759267', null,
+                    '2022-08-17 17:26:19.759267', '1234abc4f', 'Cruiserweight', 400, 90, 'LOADED'),
+                   ('b9156122-c619-44b0-8774-ca3912d467ac', '2022-08-17 17:26:19.759267', null,
+                    '2022-08-17 17:26:19.759267', '1234abc4g', 'Heavyweight', 500, 50, 'DELIEVERING'),
+                   ('b9156122-c619-44b0-8774-ca3912d467ad', '2022-08-17 17:26:19.759267', null,
+                    '2022-08-17 17:26:19.759267', '1234abc4h', 'Heavyweight', 500, 80, 'DELIVERED'),
+                   ('b9156122-c619-44b0-8774-ca3912d467ae', '2022-08-17 17:26:19.759267', null,
+                    '2022-08-17 17:26:19.759267', '1234abc4i', 'Lightweight', 100, 10, 'IDLE'),
+                   ('b9156122-c619-44b0-8774-ca3912d467ag', '2022-08-17 17:26:19.759267', null,
+                    '2022-08-17 17:26:19.759267', '1234abc4j', 'Cruiserweight', 400, 90, 'LOADED'),
+                   ('b9156122-c619-44b0-8774-ca3912d467ah', '2022-08-17 17:26:19.759267', null,
+                    '2022-08-17 17:26:19.759267', '1234abc4k', 'Heavyweight', 500, 46, 'DELIEVERING'),
+                   ('b9156122-c619-44b0-8774-ca3912d467ai', '2022-08-17 17:26:19.759267', null,
+                    '2022-08-17 17:26:19.759267', '1234abc4l', 'Heavyweight', 500, 78, 'DELIVERED'),
+                   ('b9156122-c619-44b0-8774-ca3912d467aj', '2022-08-17 17:26:19.759267', null,
+                    '2022-08-17 17:26:19.759267', '1234abc4m', 'Heavyweight', 500, 75, 'RETURNING');
+        </sql>
+    </changeSet>
+
 </databaseChangeLog>
